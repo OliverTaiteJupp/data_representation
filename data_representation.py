@@ -160,13 +160,13 @@ class FloatingPointNumber():
 
     def __int__(self):
 
-        #Convert exponent from twos complement
+        # Convert exponent from twos complement
 
-        #Convert to integer
+        # Convert to integer
 
-        #Convert mantissa from twos complement
+        # Convert mantissa from twos complement
 
-        #Convert to integer
+        # Convert to integer
         pass
 
 
@@ -175,4 +175,4 @@ if __name__ == '__main__':
     print(int(x))
     print(int(~x))
 
-
+# has this pushed
