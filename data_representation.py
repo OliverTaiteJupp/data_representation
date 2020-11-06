@@ -173,12 +173,12 @@ class FloatingPointNumber():
         # Convert mantissa from twos complement
 
         # Convert to integer
-        return 'nope'
+        return 4
 
 
 if __name__ == '__main__':
     x = FloatingPointNumber("10000100", "1100")
-    print(x)
+    print(int(x))
 
 # ur wet
 '''
