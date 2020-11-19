@@ -175,6 +175,16 @@ class FloatingPointNumber():
         # Convert to integer
         return 4
 
+class ascii(BinaryString):
+
+    def __init___ (self, binary):
+        self._ascii = binary
+
+    def text_from_bits(self, binary , encoding='utf-8', errors='surrogatepass'):
+        n = int(binary, 2)
+        self._ascii = n.to_bytes((n.bit_length() + 7) // 8, 'big').decode(encoding, errors) or '\0'
+        return self._ascii
+
 
 if __name__ == '__main__':
     x = FloatingPointNumber("10000100", "1100")
